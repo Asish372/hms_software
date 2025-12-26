@@ -1,0 +1,112 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Modern Teal Theme - Based on Reference Design */
+  --background: #F5F7FA;
+  --foreground: #1F2937;
+  
+  /* Dark Teal Sidebar */
+  --sidebar-bg: #2C4F4F;
+  --sidebar-hover: #3B5F5F;
+  --sidebar-active: #4A6E6E;
+  
+  /* Golden Accent */
+  --accent-gold: #D4AF37;
+  --accent-gold-hover: #C49F2F;
+  --accent-gold-light: #F5E8C8;
+  
+  /* Card & Surface */
+  --card: #FFFFFF;
+  --card-foreground: #1F2937;
+  --border: #E5E7EB;
+  
+  /* Semantic Colors */
+  --primary: #2C4F4F;
+  --primary-foreground: #FFFFFF;
+  --secondary: #D4AF37;
+  --secondary-foreground: #1F2937;
+  
+  --muted: #F3F4F6;
+  --muted-foreground: #6B7280;
+  
+  --success: #10B981;
+  --warning: #F59E0B;
+  --destructive: #EF4444;
+  
+  /* Chart Colors */
+  --chart-1: #2C4F4F;
+  --chart-2: #D4AF37;
+  --chart-3: #10B981;
+  --chart-4: #3B82F6;
+  --chart-5: #EC4899;
+  
+  --radius: 1rem;
+}
+
+@theme inline {
+  --font-sans: "Inter", "sans-serif";
+  
+  --color-sidebar-bg: var(--sidebar-bg);
+  --color-sidebar-hover: var(--sidebar-hover);
+  --color-sidebar-active: var(--sidebar-active);
+  --color-accent-gold: var(--accent-gold);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --radius-3xl: 3rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+@layer utilities {
+  .sidebar-gradient {
+    background: linear-gradient(135deg, #2C4F4F 0%, #3B5F5F 100%);
+  }
+  
+  .gold-shimmer {
+    background: linear-gradient(90deg, 
+      #D4AF37 0%, 
+      #E5C04F 50%, 
+      #D4AF37 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2s linear infinite;
+  }
+  
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+  
+  .smooth-transform {
+    will-change: transform;
+    transform: translateZ(0);
+  }
+  
+  .card-rounded {
+    border-radius: 1.5rem;
+  }
+  
+  .sidebar-rounded {
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+  }
+}

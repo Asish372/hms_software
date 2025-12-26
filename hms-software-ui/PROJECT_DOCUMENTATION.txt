@@ -1,0 +1,174 @@
+================================================================================
+                    HMS PRO - HOSPITAL MANAGEMENT SYSTEM
+                         PROJECT DOCUMENTATION
+================================================================================
+
+PROJECT TYPE: React + Vite Application
+LANGUAGE: TypeScript
+VERSION: 0.1.0
+
+================================================================================
+TECHNOLOGY STACK
+================================================================================
+
+Frontend Framework:
+  - React 18.3.1
+  - Vite 5.2.0 (Build Tool)
+  - TypeScript 5.x
+
+Styling:
+  - Tailwind CSS v4.1.9
+  - Shadcn UI (Radix UI Components)
+  - Custom CSS Variables
+
+UI Components:
+  - 57 Shadcn UI Components (Button, Card, Dialog, etc.)
+  - Lucide React Icons
+  - Recharts (Charts Library)
+
+Utilities:
+  - date-fns (Date formatting)
+  - clsx & tailwind-merge (Class utilities)
+  - React Router DOM 6.22.3 (Routing)
+
+================================================================================
+PROJECT STRUCTURE
+================================================================================
+
+hms-software-ui/
+├── public/                    Static assets
+├── src/
+│   ├── components/
+│   │   ├── dashboard-content.tsx    Dashboard with charts & stats
+│   │   ├── dashboard-layout.tsx     Layout with sidebar & navbar
+│   │   ├── theme-provider.tsx       Theme provider
+│   │   └── ui/                      57 Shadcn UI components
+│   ├── hooks/                   Custom React hooks
+│   ├── lib/
+│   │   └── utils.ts            Helper functions
+│   ├── styles/
+│   │   └── globals.css         Global styles & Tailwind config
+│   ├── App.tsx                 Root component
+│   └── main.tsx                Entry point
+├── index.html                  HTML entry
+├── vite.config.ts              Vite config
+├── tsconfig.json               TypeScript config
+├── components.json             Shadcn UI config
+└── package.json                Dependencies
+
+================================================================================
+IMPLEMENTED FEATURES
+================================================================================
+
+1. DASHBOARD
+   - Real-time statistics (Total Patients, Outdoor, Indoor, Active Cases)
+   - Interactive charts (Area, Pie, Bar, Line)
+   - Recent patients list with status
+   - Today's appointments timeline
+   - Quick action buttons
+
+2. NAVIGATION SYSTEM
+   - Collapsible sidebar with animations
+   - Real-time clock in navbar (Date & Time)
+   - Nested menu items with tree view
+   - Active state indicators
+   - Responsive design
+
+3. MASTERS MODULE (Sub-menus)
+   - Departments Management
+   - Consultants Registry
+   - Employees Management
+   - Items Catalog
+   - Vendors Directory
+   - Surgery Records
+   - Service/Tests Management
+   - Beds Allocation
+
+4. UI/UX ENHANCEMENTS
+   - Premium gradient backgrounds
+   - Smooth hover effects with color transitions
+   - Collapsible animations using Radix UI
+   - High contrast text (Deep Black)
+   - Tree-view style for hierarchical items
+
+================================================================================
+DESIGN SYSTEM
+================================================================================
+
+Colors:
+  - Primary: Blue gradient
+  - Secondary: Teal/Cyan
+  - Accent: Purple
+  - Success: Green
+  - Warning: Orange
+  - Destructive: Red
+
+Typography:
+  - Font Family: Inter (Google Fonts)
+  - Headings: Semibold to Bold
+  - Body: Regular weight
+
+Responsive Breakpoints:
+  - Mobile: < 768px
+  - Tablet: 768px - 1024px
+  - Desktop: > 1024px
+
+================================================================================
+NPM SCRIPTS
+================================================================================
+
+npm run dev        Start development server (localhost:5173)
+npm run build      Build for production
+npm run preview    Preview production build
+npm run lint       Run ESLint
+
+================================================================================
+KEY DEPENDENCIES
+================================================================================
+
+Production:
+  - react: 18.3.1
+  - react-dom: 18.3.1
+  - react-router-dom: 6.22.3
+  - date-fns: 4.1.0
+  - lucide-react: 0.454.0
+  - recharts: 2.15.4
+  - @radix-ui/react-*: Multiple UI primitives
+
+Development:
+  - vite: 5.2.0
+  - @vitejs/plugin-react: 4.2.1
+  - typescript: 5.x
+  - tailwindcss: 4.1.9
+
+================================================================================
+FUTURE MODULES (Planned)
+================================================================================
+
+Based on navigation structure:
+  1. Transactions - Financial operations
+  2. Outdoor - OPD management
+  3. Indoor - IPD management
+  4. Reports - Analytics and reporting
+
+================================================================================
+PROJECT STATUS
+================================================================================
+
+Current Phase: HR Review & Approval
+Status: Foundation Complete
+Next Steps: Feature expansion based on requirements
+
+================================================================================
+NOTES
+================================================================================
+
+- All components are reusable and follow React best practices
+- TypeScript ensures type safety across the application
+- Tailwind CSS v4 provides modern styling capabilities
+- Shadcn UI components are customizable and accessible
+- Project is fully responsive and production-ready
+
+================================================================================
+                            END OF DOCUMENTATION
+================================================================================
