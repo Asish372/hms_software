@@ -2,6 +2,16 @@
 
 A comprehensive, modern Hospital Management System built with React, TypeScript, and shadcn/ui components. This system provides a complete solution for managing hospital operations including patient registration, billing, inventory, and reporting.
 
+## 📸 Screenshots
+
+### Login Page
+
+![Login Page](screenshots/login-page.png)
+
+### Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
 ## ✨ Features
 
 ### 📋 Patient Management
